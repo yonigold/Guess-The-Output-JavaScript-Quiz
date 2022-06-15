@@ -144,7 +144,7 @@ function resetState() {
 // questions
 const questions = [
   {
-    img: "code1.png",
+    img: "code1.jpg",
     answers: [
       { text: "undefined", correct: false },
       { text: "NaN", correct: false },
@@ -155,7 +155,7 @@ const questions = [
         We then get a.length ~ 5 and window.a.length ~ 5 which return 0. !0 returns true.'`,
   },
   {
-    img: "code2.png",
+    img: "code2.jpg",
     answers: [
       { text: "true", correct: true },
       { text: "1", correct: false },
@@ -168,7 +168,7 @@ const questions = [
   },
 
   {
-    img: "code3.png",
+    img: "code3.jpg",
     answers: [
       { text: "true true true true;", correct: false },
       { text: "false false false false;", correct: false },
@@ -181,7 +181,7 @@ const questions = [
   },
 
   {
-    img: "code5.png",
+    img: "code5.jpg",
     answers: [
       { text: "true true true", correct: false },
       { text: "false false false", correct: false },
@@ -193,7 +193,7 @@ const questions = [
   },
 
   {
-    img: "code6.png",
+    img: "code6.jpg",
     answers: [
       { text: "true true true", correct: false },
       { text: "true true false", correct: true },
@@ -206,7 +206,7 @@ const questions = [
   },
 
   {
-    img: "code7.png",
+    img: "code7.jpg",
     answers: [
       { text: "You have 1 notification", correct: false },
       { text: "You have 1 notifications", correct: false },
@@ -218,7 +218,7 @@ const questions = [
   },
 
   {
-    img: "code8.png",
+    img: "code8.jpg",
     answers: [
       { text: `[{ firstName: "James" }]`, correct: false },
       { text: `[{ firstName: "Jonah" }]`, correct: true },
@@ -229,7 +229,7 @@ const questions = [
   },
 
   {
-    img: "code9.png",
+    img: "code9.jpg",
     answers: [
       { text: "Hello world", correct: false },
       { text: "ello world", correct: false },
@@ -240,7 +240,7 @@ const questions = [
   },
 
   {
-    img: "code10.png",
+    img: "code10.jpg",
     answers: [
       { text: `{ name: "Lydia" }, { age: 21 }`, correct: false },
       { text: `name, age`, correct: true },
@@ -251,7 +251,7 @@ const questions = [
   },
 
   {
-    img: "code11.png",
+    img: "code11.jpg",
     answers: [
       { text: `"345"`, correct: false },
       { text: `"75!"`, correct: true },
@@ -263,7 +263,7 @@ const questions = [
   },
 
   {
-    img: "code12.png",
+    img: "code12.jpg",
     answers: [
       { text: `[1, 1, 2, 3, 4]`, correct: false },
       { text: `[1, 2, 3, 4]`, correct: false },
@@ -274,7 +274,7 @@ const questions = [
   },
 
   {
-    img: "code13.png",
+    img: "code13.jpg",
     answers: [
       { text: "[[1, 2, 3, 4, 5]]", correct: false },
       { text: "[1, 2, 3, 4, 5]", correct: false },
@@ -285,7 +285,7 @@ const questions = [
   },
 
   {
-    img: "code14.png",
+    img: "code14.jpg",
     answers: [
       { text: `{ name: "Lydia", age: 21 }`, correct: true },
       {
@@ -302,7 +302,7 @@ const questions = [
   },
 
   {
-    img: "code15.png",
+    img: "code15.jpg",
     answers: [
       { text: `Sorry, you're too young.`, correct: false },
       { text: `Yay! You're old enough!`, correct: false },
@@ -313,7 +313,7 @@ const questions = [
   },
 
   {
-    img: "code16.png",
+    img: "code16.jpg",
     answers: [
       { text: "name Lydia and age 21", correct: true },
       { text: `["name", "Lydia"] and ["age", 21]`, correct: false },
@@ -326,7 +326,7 @@ const questions = [
   },
 
   {
-    img: "code17.png",
+    img: "code17.jpg",
     answers: [
       { text: `{name: "Sarah", age: 22}`, correct: false },
       { text: `{name: "Sarah", age: 23}`, correct: false },
@@ -339,7 +339,7 @@ const questions = [
   },
 
   {
-    img: "code18.png",
+    img: "code18.jpg",
     answers: [
       { text: "Woah some cool data", correct: false },
       { text: "Oh finally!", correct: false },
@@ -352,7 +352,7 @@ const questions = [
   },
 
   {
-    img: "code19.png",
+    img: "code19.jpg",
     answers: [
       { text: "a,s,n,w", correct: true },
       { text: "a,n,s,w", correct: false },
@@ -363,7 +363,7 @@ const questions = [
   },
 
   {
-    img: "code20.png",
+    img: "code20.jpg",
     answers: [
       { text: "true true", correct: false },
       { text: "true false", correct: false },
@@ -375,7 +375,7 @@ const questions = [
   },
 
   {
-    img: "code21.png",
+    img: "code21.jpg",
     answers: [
       { text: "1,2,3", correct: false },
       { text: "a,b,c", correct: false },
@@ -386,7 +386,7 @@ const questions = [
   },
 
   {
-    img: "code22.png",
+    img: "code22.jpg",
     answers: [
       { text: "Border Collie, Wooh", correct: false },
       { text: "Border Collie, undefined", correct: false },
@@ -397,7 +397,7 @@ const questions = [
   },
 
   {
-    img: "code23.png",
+    img: "code23.jpg",
     answers: [
       { text: `[true, true]`, correct: true },
       { text: `[false, true]`, correct: false },
@@ -409,7 +409,7 @@ const questions = [
   },
 
   {
-    img: "code24.png",
+    img: "code24.jpg",
     answers: [
       { text: "6", correct: false },
       { text: "27", correct: true },
@@ -420,7 +420,7 @@ const questions = [
   },
 
   {
-    img: "code25.png",
+    img: "code25.jpg",
     answers: [
       { text: "1", correct: false },
       { text: "2", correct: false },
@@ -431,7 +431,7 @@ const questions = [
   },
 
   {
-    img: "code26.png",
+    img: "code26.jpg",
     answers: [
       { text: "my@email.com", correct: true },
       { text: "new@email.com", correct: false },
@@ -444,7 +444,7 @@ const questions = [
   },
 
   {
-    img: "code26.png",
+    img: "code27.jpg",
     answers: [
       { text: `{ email: "my@email.com", address: null }`, correct: false },
       { text: `{ email: "my@email.com" }`, correct: false },
@@ -458,7 +458,7 @@ const questions = [
   },
 
   {
-    img: "code27.png",
+    img: "code28.jpg",
     answers: [
       { text: "It's not a string!", correct: false },
       { text: "Yay it's a string!", correct: true },
