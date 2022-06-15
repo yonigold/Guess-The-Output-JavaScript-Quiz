@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Quiz App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <div class="start" id="start-screen">
+      <h1 class="start__title">JavaScript Quiz ! Guess The output!</h1>
+      <button class="start__button" id="start-button">Start Quiz</button>
+    </div>
+    <div class="instructions hide" id="instructions">
+      <h1 class="instructions__title">Quiz information:</h1>
+      <h3 class="instructions__subtitle">
+        1. The order of the questions is random.
+      </h3>
+      <h3 class="instructions__subtitle">
+        2. There are different levels of JavaScript questions-From begginer to
+        advanced
+      </h3>
+      <h3 class="instructions__subtitle">
+        3. once you click on one of the answers button, a short explantion will
+        appear.
+      </h3>
+      <h3 class="instructions__subtitle">
+        4. Click the next button to show the next question.
+      </h3>
+      <button class="start__button" id="instructions-button">Start</button>
+    </div>
+    <div class="questions-container hide" id="questions-container">
+      <img src="" alt="" class="question-image" id="question-img" />
+      <h3 class="question-number" id="question-number"></h3>
+      <p class="question-title" id="question"></p>
+
+      <div class="answer-buttons" id="answer-buttons"></div>
+      <br />
+      <br />
+
+      <div class="next-button" id="next-button">
+        <button class="next-button__button btn" id="next-button__button">
+          Next
+        </button>
+      </div>
+
+      <div id="explantion">
+        <h1>explantion</h1>
+        <p id="explanation-p"></p>
+      </div>
+    </div>
+    <div class="final-screen hide" id="final-screen">
+      <h1 class="instructions__title">
+        Congrats ! you finished the JavaScript Quiz.
+      </h1>
+      <h3 class="instructions__subtitle" id="final-points"></h3>
+      <button class="start__button" id="restart-button">Start again</button>
+    </div>
+    <h4 class="points hide" id="points">Points:</h4>
+
+    <script src="script.js"></script>
+  </body>
+</html>
