@@ -83,18 +83,12 @@ body {
   position: relative;
 }
 
-/* .question-image {
-  margin: 0 auto ;
-  width: 50%;
-  max-width: 100%;
-  height: 300px;
-  border-radius: 10px;
-} */
 
 img {
-  width: 30rem;
+  max-width: 30rem;
   height: 20rem;
   border-radius: 10px;
+  content-visibility: auto;
 }
 
 .question-title {

@@ -27,8 +27,10 @@
   }
 
   img {
-    width: 20rem;
+    max-width: 20rem;
     height: 20rem;
+    content-visibility: auto;
+    
   }
 
   .answer-buttons {
