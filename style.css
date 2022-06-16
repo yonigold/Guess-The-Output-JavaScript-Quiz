@@ -14,6 +14,7 @@ body {
   justify-content: center;
   width: 100vw;
   height: 100vh;
+  
 }
 
 .start {
@@ -81,6 +82,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  transition: all 0.5s ease-in-out;
 }
 
 
@@ -89,6 +91,7 @@ img {
   height: 20rem;
   border-radius: 10px;
   content-visibility: auto;
+  transition: img 0.5s ease-in-out;
 }
 
 .question-title {

@@ -20,6 +20,7 @@
     width: 100%;
     height: 100%;
     padding: 60px 20px;
+    
   }
 
   .instructions__title {
@@ -30,7 +31,7 @@
     max-width: 20rem;
     height: 20rem;
     content-visibility: auto;
-    
+    transition: img 0.5s ease-in-out;
   }
 
   .answer-buttons {
@@ -47,6 +48,11 @@
     width: 100%;
     height: 90%;
     margin: auto;
+    font-size: 12px;
+  }
+
+  #next-button {
+    width: 90px;
   }
 
   .points {

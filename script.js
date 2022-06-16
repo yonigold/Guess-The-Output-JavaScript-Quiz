@@ -56,7 +56,8 @@ function setNextQuestion() {
 // show question
 function showQuestion(question) {
   screenPoints.classList.remove("hide");
-  screenPoints.innerText = "Points: " + points;
+  screenPoints.innerText =
+    "Points: " + points + " / " + questionPosition.length;
   questionImg.src = question.img;
 
   // show answers
@@ -86,6 +87,7 @@ function selectAnswer(e) {
   if (correctAnswer) {
     clickedButton.classList.add("correct");
     points = points + 1;
+
     explanation.innerText = "Correct!";
     explanation.style.color = "rgb(28, 236, 28)";
     explanation.classList.remove("hide");
@@ -121,7 +123,8 @@ function selectAnswer(e) {
     numberQuestion++;
   }
 
-  screenPoints.innerText = "Points: " + points;
+  screenPoints.innerText =
+    "Points: " + points + " / " + questionPosition.length;
 
   if (questionPosition.length <= currentQuestionIndex) {
     questionContainer.classList.add("hide");
