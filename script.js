@@ -16,7 +16,7 @@ const explanation = document.getElementById("explantion");
 const explanationP = document.getElementById("explanation-p");
 const nextButton = document.getElementById("next-button");
 
-var questionPosition, currentQuestionIndex;
+let questionPosition, currentQuestionIndex;
 
 // event listeners
 startButton.addEventListener("click", start);
@@ -31,7 +31,6 @@ function start() {
   instructions.classList.remove("hide");
   startScreen.classList.add("hide");
 }
-
 //Start quiz
 function startQuiz() {
   questionContainer.classList.remove("hide");
@@ -87,15 +86,9 @@ function selectAnswer(e) {
   if (correctAnswer) {
     clickedButton.classList.add("correct");
     points = points + 1;
-
     explanation.innerText = "Correct!";
     explanation.style.color = "rgb(28, 236, 28)";
-    explanation.classList.remove("hide");
-    document.createElement("p");
-    explanationP.innerText = questions[currentQuestionIndex].explanation;
-    explanationP.style.color = "black";
-    explanationP.style.fontFamily = "Montserrat";
-    explanation.appendChild(explanationP);
+    stylesMaker();
 
     currentQuestionIndex++;
     numberQuestion++;
@@ -112,20 +105,18 @@ function selectAnswer(e) {
 
     explanation.innerText = "Wrong!";
     explanation.style.color = "red";
-    explanation.classList.remove("hide");
-    // document.createElement("p");
-    explanationP.innerText = questions[currentQuestionIndex].explanation;
-    explanationP.style.color = "black";
-    explanationP.style.fontFamily = "Montserrat";
-    explanation.appendChild(explanationP);
+    stylesMaker();
 
     currentQuestionIndex++;
     numberQuestion++;
   }
 
+  lastQuestion();
+}
+
+function lastQuestion() {
   screenPoints.innerText =
     "Points: " + points + " / " + questionPosition.length;
-
   if (questionPosition.length <= currentQuestionIndex) {
     questionContainer.classList.add("hide");
     finalScreen.classList.remove("hide");
@@ -133,8 +124,15 @@ function selectAnswer(e) {
     finalPoints.innerText =
       "You got: " + points + " Points out of " + questionPosition.length;
   }
+}
 
-  // setNextQuestion();
+function stylesMaker() {
+  explanation.classList.remove("hide");
+  document.createElement("p");
+  explanationP.innerText = questions[currentQuestionIndex].explanation;
+  explanationP.style.color = "black";
+  explanationP.style.fontFamily = "Montserrat";
+  explanation.appendChild(explanationP);
 }
 
 // reset state

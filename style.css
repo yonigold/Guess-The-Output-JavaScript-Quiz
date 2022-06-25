@@ -14,7 +14,6 @@ body {
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  
 }
 
 .start {
@@ -58,6 +57,8 @@ body {
   border-radius: 6px;
   box-shadow: 12px -6px 26px -19px rgba(0, 0, 0, 0.75);
   padding: 30px 40px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .instructions__title {
@@ -84,7 +85,6 @@ body {
   position: relative;
   transition: all 0.5s ease-in-out;
 }
-
 
 img {
   max-width: 30rem;
